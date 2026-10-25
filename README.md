@@ -12,8 +12,7 @@ CRM Realm/
 ├── java-lead-tracker/
 │   ├── src/
 │   │   ├── Lead.java             # Lead domain model with validation & dynamic priority
-│   │   ├── Main.java             # Interactive console interface with accumulative error display
-│   │   └── LeadTest.java         # Standalone unit test suite (23 tests, zero dependencies)
+│   │   └── Main.java             # Interactive console interface with accumulative error display
 │   └── bin/                      # Compiled Java class files
 ├── javascript/
 │   └── solutions.js              # Self-contained JavaScript file with 3 functions & test suite
@@ -37,21 +36,15 @@ Open your terminal and navigate to the Java project directory:
 cd "java-lead-tracker"
 ```
 
-1. **Compile all Java source files:**
+1. **Compile Java source files:**
    ```powershell
-   javac -d bin src/Lead.java src/Main.java src/LeadTest.java
+   javac -d bin src/Lead.java src/Main.java
    ```
 
 2. **Run the interactive console application:**
    ```powershell
    java -cp bin Main
    ```
-
-3. **Run the automated unit tests:**
-   ```powershell
-   java -cp bin LeadTest
-   ```
-   *(Runs 23 automated tests covering valid lead creation, priority boundaries, invalid inputs, and multi-error validation).*
 
 ---
 
@@ -105,7 +98,7 @@ The queries in [`sql/queries.sql`](sql/queries.sql) are written in standard ANSI
 
 ## 3. Test Cases & Boundary Value Coverage
 
-### Java Unit Tests (`LeadTest.java` - 23 Tests)
+### Java Lead Tracker Test Scenarios
 - **Priority Boundary Values:**
   - `0` (COLD lower boundary)
   - `49` (COLD upper boundary)
