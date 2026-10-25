@@ -1,0 +1,12 @@
+# Assessment PDF (Confidential / Excluded from submission)
+Technical Assessment.pdf
+*.pdf
+
+# Java compiled binaries
+bin/
+*.class
+
+# IDE & Editor metadata
+.vscode/
+.idea/
+*.iml
